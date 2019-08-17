@@ -1,0 +1,11 @@
+<h1>New Guest</h1>
+
+<%= form_for @guest do |f| %>
+  <%= f.label 'Guest Name' %>
+  <%= f.text_field :name %><br>
+  <%= f.label 'Favorite City' %>
+  <%= f.text_field :favorite_city %><br>
+  <%= f.label 'Number of Bookings' %>
+  <%= f.number_field :num_of_bookings %><br>
+  <%= f.submit %><br>
+<% end %>
